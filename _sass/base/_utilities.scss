@@ -1,0 +1,45 @@
+@import "../variables";
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: $regular;
+  @media only screen and (max-width: 991px) {
+    font-size: 15px;
+  }
+}
+h1,h2 {
+  font-size: 36px;
+  line-height: normal;
+  font-weight: $bold;
+  color: $heading-two-color;
+  @media only screen and (max-width: 991px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 22px;
+  }
+}
+h2 {
+  font-size: 24px;
+  @media only screen and(max-width: 767px) {
+    font-size: 22px;
+  }
+}
+
+.course-desc {
+  font-size: 16px;
+  color: rgba($para-color, 0.75);
+  font-weight: $regular;
+  line-height: normal;
+  @media only screen and (max-width: 991px) {
+    font-size: 15px;
+  }
+}
+
+strong {
+  font-weight: $bold;
+}

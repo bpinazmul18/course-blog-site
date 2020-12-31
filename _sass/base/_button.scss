@@ -1,0 +1,7 @@
+@import "../variables";
+input[type="submit"] {
+  outline: none;
+  border: 1px solid $btn-primary-bg-color;
+  color: $text-white;
+  transition: 0.3s;
+}

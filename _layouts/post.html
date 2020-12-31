@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section class="course-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="sidebar-wrapper">
+                    <div id="accordion">
+                        {% for page_hash in site.data.pages %}
+                        {% assign page = page_hash[1] %}
+                            <div class="card">
+                                <div class="card-header" id="{{ page.slug }}-heading">
+                                    <h4 class="card-title">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#{{ page.slug }}" aria-expanded="true" aria-controls="{{ page.slug }}">
+                                            {{ page.title }}
+                                        </button>
+                                    </h4>
+                                </div>
+                                <div id="{{ page.slug }}" class="collapse show" aria-labelledby="{{ page.slug }}-heading" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            {% for post in page.posts %}
+                                            <li class="list-group-item">
+                                                <a class="list-group-link" href="{{ post.url }}">
+                                                    <span class="icon-wrap">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </span>
+                                                    {{ post.title }}
+                                                </a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                <div class="course-main-content-wrapper">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

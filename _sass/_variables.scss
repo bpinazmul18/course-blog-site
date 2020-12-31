@@ -1,0 +1,47 @@
+//typography
+$primary-font: 'Source Sans Pro', sans-serif; //font-family
+$extra-light: 200; //font-weight: extra-light
+$light: 300; //font-weight: light
+$regular: 400; //font-weight: regular
+$semi-bold: 600; //font-weight: semi-bold
+$bold: 700; //font-weight: bold
+
+
+//color;
+//color;
+$bg-white: #ffff;
+$bg-gray: #efefef;
+$bg-theme-color: #E3F0FB;
+$bg-theme-dark-color: #2B324D;
+$text-white: $bg-white;
+$text-primary: #0556f3;
+$text-primary-hover-color: #03338f; // text hover color1
+$text-black: #25265e;
+$para-color: #25275F;
+$card-bg-color-gray: #FBFBFB;
+$card-border-bg-color: #e5f1fb;
+$card-text-color: #1A1B42;
+$card-text-hover-color: $text-primary;
+$card-bg-white-color: $bg-white;
+$border-light-color: #eaf4fc;
+$card-heading-text-color: #1A1B42;
+$active-text-color: $card-text-hover-color;
+$card-list-link-text-color: #25265E;
+$card-list-item-hover-bg-color: $active-text-color;
+$card-list-link-active-color: $text-primary;
+$card-border-color: $active-text-color;
+$card-list-icon-color: #fbfbfb;
+$card-icon-border-color: #d3dce6;
+$card-list-item-link-color: #007bff;
+$footer-text-color: #f9fafc;
+$btn-primary-bg-color: $card-list-item-hover-bg-color;
+$btn-primary-bg-hover-color: $text-primary-hover-color;
+$footer-text-link-color: $card-icon-border-color;
+$code-bg-color: #f5f5f5;
+
+
+//heading-color
+$heading-two-color: #25265e;
+
+//border-color
+$border-gray: $bg-gray;

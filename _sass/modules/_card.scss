@@ -1,0 +1,103 @@
+@import "../variables";
+.card {
+  background: $card-bg-white-color;
+  box-shadow: 2px 0 5px  $border-light-color;
+  border-color: $card-border-bg-color;
+  border-radius: 8px;
+  .card-header {
+    background: transparent;
+    padding: 16px 24px;
+    border-bottom: 1px solid $card-border-bg-color;
+    .card-title {
+      font-size: 16px;
+      line-height: 24px;
+      color: $card-heading-text-color;
+      font-weight: $semi-bold;
+      margin: 0;
+      @media only screen and (max-width: 991px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .card-body {
+    padding: 24px 0;
+    .list-group {
+      .list-group-item {
+        background: transparent;
+        border-color: transparent;
+        padding: 0;
+        .list-group-link {
+          color: $card-text-color;
+          text-decoration: none;
+          padding: 6px 24px;
+          display: block;
+          font-weight: $semi-bold;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  margin: 20px 0 60px 0;
+  @media only screen and (max-width: 575px) {
+    margin: 10px 0 40px 0;
+  }
+  .card-body {
+    .list-group {
+      .list-group-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .list-group-link {
+          width: 100%;
+          padding: 8px 24px;
+          color: rgba($card-heading-text-color, 0.7);
+          display: flex;
+          align-items: center;
+          &.active {
+            .icon-wrap {
+              i {
+                color: $card-list-link-active-color;
+                line-height: normal;
+              }
+            }
+          }
+          &:hover {
+            color: $card-text-hover-color;
+          }
+          .icon-wrap {
+            position: relative;
+            margin-right: 16px;
+            z-index: 1;
+            display: block;
+            &:after {
+              content: '';
+              position: absolute;
+              top: 22px;
+              left: 11px;
+              width: 2px;
+              height: calc(100% - 2px);
+              background: $card-icon-border-color;
+              z-index: -1;
+              display: block;
+            }
+            i {
+              color: $card-icon-border-color;
+              font-size: 24px;
+            }
+          }
+        }
+        &:last-child {
+          .list-group-link {
+            .icon-wrap {
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+---
+layout: default
+---
+
+<!--banner section start-->
+<section class="banner-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="banner-content-box">
+                    <h1>Learn Python Programming</h1>
+                    <p class="course-desc">Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners. Python is a powerful general-purpose programming language. It is used in web development, data science, creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners. Python is a powerful general-purpose programming language. It is used in web development, data science, creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners.</p>
+                    <p class="course-desc">Our Python tutorial will guide you to learn Python one step at a time. Our Python tutorial will guide you to learn Python one step at a time. Our Python tutorial will guide you to learn Python one step at a time. Our Python tutorial will guide you to learn Python one step at a time.</p>
+                    <p class="course-desc">If you prefer videos, watch our <a href="#">Python for beginners</a> playlist on Youtube. Our Python tutorial will guide you to learn Python one step at a time. Our Python tutorial will guide you to learn Python one step at a time. Our Python tutorial will guide you to learn Python one step at a time. Our Python tutorial will guide you to learn Python one step at a time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--banner section start-->
+<section class="course-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="course-wrapper-left">
+                    <div class="course-sidebar-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Page Index</h4>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush" id="navTab">
+                                    {% for page_hash in site.data.pages %}
+                                        {% assign page = page_hash[1] %}
+                                        {% if forloop.first %}
+                                            <li class="list-group-item"><a class="list-group-link active current" href="#{{ page.slug }}">{{ page.title }}</a></li>
+                                        {% else %}
+                                            <li class="list-group-item"><a class="list-group-link active" href="#{{ page.slug }}">{{ page.title }}</a></li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                <div class="content-wrapper">
+                    {% for page_hash in site.data.pages %}
+                        {% assign page = page_hash[1] %}
+                        <div class="lesson-single-item" id="{{ page.slug }}">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">{{ page.title }}</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        {% for post in page.posts %}
+                                            <li class="list-group-item">
+                                                <a class="list-group-link" href="{{ post.url }}">
+                                                    <span class="icon-wrap">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </span>
+                                                    {{ post.title }}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                    <div class="lesson-description-wrap">
+                        <div class="lesson-single-description">
+                            <hr>
+                            <h2>About Python Programming</h2>
+                            <ul>
+                                <li><strong>Free and open-source</strong> - You can freely use and distribute Python, even for commercial use.</li>
+                                <li><strong>Easy to learn</strong> - Python has a very simple and elegant syntax. It's much easier to read and write Python programs compared to other languages like C++, Java, C#.</li>
+                                <li><strong>Portable</strong> - You can move Python programs from one platform to another, and run it without any changes.</li>
+                            </ul>
+                        </div>
+                        <div class="lesson-single-description">
+                            <hr>
+                            <h2>Why Learn Python?</h2>
+                            <ul>
+                                <li>Python is easy to learn. Its syntax is easy and code is very readable.</li>
+                                <li>Python has a lot of applications. It's used for developing web applications, data science, rapid application development, and so on.</li>
+                                <li>Python allows you to write programs in fewer lines of code than most of the programming languages.</li>
+                                <li>The popularity of Python is growing rapidly. Now it's one of the most popular programming languages.</li>
+                            </ul>
+                        </div>
+                        <div class="lesson-single-description">
+                            <hr>
+                            <h2>How to learn Python?</h2>
+                            <ul>
+                                <li><strong>Python tutorial from Programiz</strong> - We provide step by step Python tutorials, examples, and references. <a href="#">Get started with Python.</a></li>
+                                <li><strong>Official Python tutorial</strong> - Might be hard to follow and understand for beginners. Visit the official <a href="#">Python tutorial.</a></li>
+                                <li><strong>Get Learn Python App</strong> - The beginner-friendly app contains byte size lessons and an integrated Python interpreter. To learn more, visit: <a href="#">Learn Python app</a></li>
+                                <li><strong>Write a lot of Python code</strong> - The only way you can learn programming is by writing a lot of code.</li>
+                            </ul>
+                        </div>
+                        <div class="lesson-single-description">
+                            <hr>
+                            <h2>Python Resources</h2>
+                            <ul>
+                                <li><a href="#">Python Examples</a></li>
+                                <li><a href="#">Python References</a></li>
+                                <li><a href="#">Python Online Compiler</a></li>
+                                <li><a href="#">Python Guide</a></li>
+                                <li><a href="#">Python Tutorial Videos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

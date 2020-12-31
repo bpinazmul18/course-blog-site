@@ -1,0 +1,11 @@
+title: Introduction2
+slug: introduction2
+posts:
+  - title: Python Functions
+    url: /python-functions.html
+
+  - title: Function Argument
+    url: /function-argument.html
+
+  - title: Python Recursion
+    url: /python-recursion.html
