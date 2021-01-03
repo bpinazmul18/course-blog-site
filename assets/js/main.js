@@ -20,6 +20,8 @@
 
     // Initiate code editor
     // initAddedDCLightExercises()
+    hightLight ()
+
 })(jQuery);
 
 $(function() {
@@ -40,3 +42,4 @@ $(function() {
         );
     });
 });
+
