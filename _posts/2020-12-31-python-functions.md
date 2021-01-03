@@ -16,10 +16,7 @@ As we have seen on previous tutorials, Python makes use of blocks.
 
 A block is a area of code of written in the format of:
 
-    block_head:
-        1st block line
-        2nd block line
-        ...
+<div class="sec-widget" data-widget="9e1e25c224b32a941cccc468d284e148"></div>
 
 Where a block line is more Python code (even another block), and the block head is of the following format:
 block_keyword block_name(argument1,argument2, ...)
